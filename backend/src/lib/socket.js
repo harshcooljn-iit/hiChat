@@ -23,7 +23,7 @@ export function getReceiverSocketId(userId) {
 }
 
 // used to store online users
-let userSocketMap = {} // {user._id: socket.id}
+const userSocketMap = {} // {user._id: socket.id}
 
 io.on("connection", (socket) => {
     console.log("A user connected", socket.id);
